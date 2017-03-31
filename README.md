@@ -9,7 +9,9 @@ __Prediction:__
 Given two team names, return probability (two digits) that the first team defeats the second one. The probability is worked out by finding the number of times each of the characters in the word DEFEATS appears in the team names. This should result in your first number made of 7 or more digits. To obtain the next number in the series you should add each sequential pair of digits together to form the next number like so:
 
 1 2 3 1
+
 \\/ \\/ \\/
+
 3 5 4
 
 Repeat this process until you are left with only 2 digits.
@@ -21,18 +23,33 @@ D E F E A T S
 
 0 0 0 0 3 1 3
 
+...
+
 000344
+
 00378
+
 031015
+
 34116
+
 7527
+
 1279
+
 3916
+
 12107
+
 3317
+
 648
+
 1012
+
 113
+
+...
 
 24%
 
@@ -100,6 +117,7 @@ $ rspec
 
 * Controller specs have been removed in favour of request specs
 * Due to time constraints request specs also validate the structure of the returned JSON. In a real world scenario these should be tested in the view.
+* Admittedly the app may be slightly over tested :p
 
 ---
 # Justification of design decisions
