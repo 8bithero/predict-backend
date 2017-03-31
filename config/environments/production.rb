@@ -75,4 +75,7 @@ Rails.application.configure do
 
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
+
+  # Defines the word used to predict the winner
+  config.x.prediction_word = ENV['PREDICTION_WORD'] || 'DEFEATS'
 end

@@ -39,4 +39,7 @@ Rails.application.configure do
 
   # Raises error for missing translations
   # config.action_view.raise_on_missing_translations = true
+
+  # Defines the word used to predict the winner
+  config.x.prediction_word = ENV['PREDICTION_WORD'] || 'DEFEATS'
 end

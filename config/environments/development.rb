@@ -44,4 +44,7 @@ Rails.application.configure do
   # Use an evented file watcher to asynchronously detect changes in source code,
   # routes, locales, etc. This feature depends on the listen gem.
   config.file_watcher = ActiveSupport::EventedFileUpdateChecker
+
+  # Defines the word used to predict the winner
+  config.x.prediction_word = ENV['PREDICTION_WORD'] || 'DEFEATS'
 end
